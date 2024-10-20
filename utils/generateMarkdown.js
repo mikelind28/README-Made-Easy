@@ -18,7 +18,6 @@ function renderLicenseBadge(license) {
   }
 }
 
-
 /*
 
 // TODO: Create a function that returns the license link
@@ -33,8 +32,7 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(project) {
-  return `
-# ${project.title}
+  return `# ${project.title}
 
 ${renderLicenseBadge(project.license)}
 
@@ -73,7 +71,7 @@ ${project.tests}
 
 ## Questions
 
-I am ${project.username} on GitHub. [Go to my GitHub profile](https://github.com/${project.username})
+[Go to my GitHub profile ↗️](https://github.com/${project.username})
 
 Or, email me at <${project.email}> if you have questions!
 `
