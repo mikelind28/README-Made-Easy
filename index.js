@@ -66,42 +66,42 @@ function createLicenseFileTest(license, username) {
     switch (license) {
         case "Apache License 2.0":
             fs.writeFile(
-                "LICENSE.txt",
+                "./output/LICENSE.txt",
                 apacheLicense(currentYear, username),
                 (err) => err ? console.log(err) : console.log(colors.bgYellow("Created new Apache License 2.0 LICENSE file."))
             );
             break;
         case "BSD 3-Clause License":
             fs.writeFile(
-                "LICENSE.txt", 
+                "./output/LICENSE.txt", 
                 bsdLicense(currentYear, username),
                 (err) => err ? console.log(err) : console.log(colors.bgBrightRed('Created new BSD 3-Clause License LICENSE file.'))
             );
             break;
         case "GNU GPLv3":
             fs.writeFile(
-                "LICENSE.txt", 
+                "./output/LICENSE.txt", 
                 gnuLicense(currentYear, username),
                 (err) => err ? console.log(err) : console.log(colors.bgBlue('Created new GNU General Public License (version 3) LICENSE file.'))
             );
             break;
         case "ISC License":
             fs.writeFile(
-                "LICENSE.txt", 
+                "./output/LICENSE.txt", 
                 iscLicense(currentYear, username),
                 (err) => err ? console.log(err) : console.log(colors.bgBrightBlue('Created new ISC License LICENSE file.'))
             );
             break;
         case "MIT":
             fs.writeFile(
-                "LICENSE.txt", 
+                "./output/LICENSE.txt", 
                 mitLicense(currentYear, username),
                 (err) => err ? console.log(err) : console.log(colors.bgBrightYellow('Created new MIT LICENSE file.'))
             );
             break;
         case "Mozilla Public License 2.0":
             fs.writeFile(
-                "LICENSE.txt", 
+                "./output/LICENSE.txt", 
                 mozillaLicense(),
                 (err) => err ? console.log(err) : console.log(colors.bgBrightGreen('Created new Mozilla Public License 2.0 LICENSE file.'))
             );
@@ -110,50 +110,6 @@ function createLicenseFileTest(license, username) {
             console.log(colors.gray("No license file created."));
     }
 }
-
-/*
-function createLicenseFile(license, username) {
-    if (license === "Apache License 2.0") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            apacheLicense(currentYear, username),
-            (err) => err ? console.log(err) : console.log(colors.bgYellow('Created new Apache License 2.0 LICENSE file.'))
-        );
-    } else if (license === "BSD 3-Clause License") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            bsdLicense(currentYear, username),
-            (err) => err ? console.log(err) : console.log(colors.bgBrightRed('Created new BSD 3-Clause License LICENSE file.'))
-        );
-    } else if (license === "GNU GPLv3") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            gnuLicense(currentYear, username),
-            (err) => err ? console.log(err) : console.log(colors.bgBlue('Created new GNU General Public License (version 3) LICENSE file.'))
-        );
-    } else if (license === "ISC License") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            iscLicense(currentYear, username),
-            (err) => err ? console.log(err) : console.log(colors.bgBrightBlue('Created new ISC License LICENSE file.'))
-        );
-    } else if (license === "MIT") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            mitLicense(currentYear, username),
-            (err) => err ? console.log(err) : console.log(colors.bgBrightYellow('Created new MIT LICENSE file.'))
-        );
-    } else if (license === "Mozilla Public License 2.0") {
-        fs.writeFile(
-            "LICENSE.txt", 
-            mozillaLicense(),
-            (err) => err ? console.log(err) : console.log(colors.bgBrightGreen('Created new Mozilla Public License 2.0 LICENSE file.'))
-        );
-    } else {
-      return ""
-    }
-}
-*/
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -169,7 +125,7 @@ function init() {
     inquirer
     .prompt(questions)
     .then((project) => {
-        writeToFile("SAMPLE.md", project);
+        writeToFile("./output/SAMPLE.md", project);
         createLicenseFileTest(project.license, project.username);
     })
 }
