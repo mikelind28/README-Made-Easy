@@ -20,11 +20,20 @@ Save time creating your README file with an interactive and intuitive CLI applic
 This application uses node.js. If you don't have it installed, you can download it here: [Node.js — Download Node.js](https://nodejs.org/en/download/package-manager)
 
 Then, clone the repository to your local enviroment from the Command Line:
-```git clone https://github.com/mikelind28/README-Made-Easy.git```
+
+```bash
+git clone https://github.com/mikelind28/README-Made-Easy.git
+```
 
 Make sure you cd into the newly-cloned README-Made-Easy directory, then install the required dependencies with Node Package Manager:
-```cd README-Made-Easy```
-```npm install```
+
+```bash
+cd README-Made-Easy
+```
+
+```bash
+npm install
+```
 
 Now you're ready to use README-Made-Easy!
 
