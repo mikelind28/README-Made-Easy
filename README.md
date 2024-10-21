@@ -43,6 +43,8 @@ From within the README-Made-Easy directory, simply run ```node index.js``` in th
 
 After all of the questions are answered, a new SAMPLE.md file is created, as well as a LICENSE.text if you've selected a license.
 
+View a walkthrough video here: [README-Made-Easy Walkthrough](https://drive.google.com/file/d/1H47A6TUaJYyMTn4uYytp4EBFaR6e6e1T/view?usp=sharing)
+
 ## Credits
 
 REAME-Made-Easy uses the [inquirer.js](https://github.com/SBoudrias/Inquirer.js/blob/main/packages/inquirer/README.md) and the [colors.js](https://github.com/Marak/colors.js) node packages. 
