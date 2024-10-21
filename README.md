@@ -4,7 +4,7 @@
 
 ## Description
 
-With the README-Made-Easy application, developers can quickly create a new, formatted, professional README. Accessed through the Command Line Interface, the application prompts users with a set of questions about their project. The user's answers are then output into a new markdown file called SAMPLE.md. If the user selects a license from a list of options, the appropriate LICENSE.txt file is also created, including a customized copyright line with the user's GitHub username and the current year.
+With the README-Made-Easy application, developers can quickly create a new, formatted README. Accessed through the Command Line Interface, the application prompts users with a set of questions about their project. The user's answers are then output into a new markdown file called SAMPLE.md. If the user selects a license from a list of options, the appropriate LICENSE.txt file is also created, including a customized copyright line with the user's GitHub username and the current year.
 
 Save time creating your README file with an interactive and intuitive CLI application — try out README-Made-Easy today!
 
