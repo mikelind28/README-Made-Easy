@@ -59,7 +59,7 @@ ${project.usage}
 
 ## License
 
-See the project license here: [${project.license}](./output/LICENSE.txt)
+See the project license here: [${project.license}](./LICENSE.txt)
 
 ## Contributing
 
