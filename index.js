@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// import packages needed for this application.
 import inquirer from "inquirer";
 import colors from "colors";
 import fs from "fs";
@@ -10,9 +10,10 @@ import { iscLicense } from "./utils/license-options/ISC.js";
 import { mitLicense } from "./utils/license-options/MIT.js";
 import { mozillaLicense } from "./utils/license-options/Mozilla.js";
 
+// current year for copyright info in generated LICENSE file.
 const currentYear = new Date().getFullYear();
 
-// TODO: Create an array of questions for user input
+// an array of questions to be asked in the command line.
 const questions = [
     {
         type: "input",
@@ -62,6 +63,7 @@ const questions = [
     }
 ];
 
+// a function to create a new LICENSE.txt file based on the user's license selection.
 function createLicenseFileTest(license, username) {
     switch (license) {
         case "Apache License 2.0":
@@ -111,7 +113,7 @@ function createLicenseFileTest(license, username) {
     }
 }
 
-// TODO: Create a function to write README file
+// a function to write the new README file.
 function writeToFile(fileName, data) {
     fs.writeFile(
         fileName, 
@@ -120,7 +122,7 @@ function writeToFile(fileName, data) {
     );
 }
 
-// TODO: Create a function to initialize app
+// a function to initialize the app, using the Inquirer.js package.
 function init() {
     inquirer
     .prompt(questions)
@@ -130,6 +132,6 @@ function init() {
     })
 }
 
-// Function call to initialize app
+// call the function to initialize the app.
 init();
 
