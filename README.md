@@ -1,5 +1,7 @@
 # README-Made-Easy
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Description
 
 With the README-Made-Easy application, developers can quickly create a new, formatted, professional README. Accessed through the Command Line Interface, the application prompts users with a set of questions about their project. The user's answers are then output into a new markdown file called SAMPLE.md. If the user selects a license from a list of options, the appropriate LICENSE.txt file is also created, including a customized copyright line with the user's GitHub username and the current year.
@@ -8,7 +10,10 @@ Save time creating your README file with an interactive and intuitive CLI applic
 
 ## Table of Contents
 
-- []()
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
 
 ## Installation
 
@@ -35,4 +40,4 @@ REAME-Made-Easy uses the [inquirer.js](https://github.com/SBoudrias/Inquirer.js/
 
 ## License
 
-This project is licensed under 
+This project is licensed under the [MIT License](./LICENSE).
