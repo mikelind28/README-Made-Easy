@@ -59,7 +59,7 @@ ${project.usage}
 
 ## License
 
-See the project license here: [${project.license}](./LICENSE.txt)
+See the project license here: [${project.license}](./output/LICENSE.txt)
 
 ## Contributing
 
@@ -78,11 +78,3 @@ Or, email me at <${project.email}> if you have questions!
 }
 
 export default generateMarkdown;
-
-/*
-if user selects MIT,
--an MIT badge will show near the top of my README.md
--a link titled MIT will show in the License section
--a file will be created called LICENSE.md (fs.writeFile())
--LICENSE.md contains the default text for that license
-*/
