@@ -3,12 +3,12 @@ import inquirer from "inquirer";
 import colors from "colors";
 import fs from "fs";
 import generateMarkdown from "./utils/generateMarkdown.js";
-import { apacheLicense } from "./utils/licenses/apache.js";
-import { bsdLicense } from "./utils/licenses/BSD.js";
-import { gnuLicense } from "./utils/licenses/GNU.js";
-import { iscLicense } from "./utils/licenses/ISC.js";
-import { mitLicense } from "./utils/licenses/MIT.js";
-import { mozillaLicense } from "./utils/licenses/Mozilla.js";
+import { apacheLicense } from "./utils/license-options/apache.js";
+import { bsdLicense } from "./utils/license-options/BSD.js";
+import { gnuLicense } from "./utils/license-options/GNU.js";
+import { iscLicense } from "./utils/license-options/ISC.js";
+import { mitLicense } from "./utils/license-options/MIT.js";
+import { mozillaLicense } from "./utils/license-options/Mozilla.js";
 
 const currentYear = new Date().getFullYear();
 
